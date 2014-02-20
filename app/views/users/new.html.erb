@@ -1,0 +1,5 @@
+<%=error_messages_for :user%>
+<%=form_for @user, :html=> {:id => 'twitter_form_id'} do |f|%>
+  <p>User: <%=f.text_field :name,onchange:'checkTwitterID(this)'%></p>  
+  <p><%=f.submit :Submit, disabled:'true', id:'submit_button' %></p>
+<%end%>
