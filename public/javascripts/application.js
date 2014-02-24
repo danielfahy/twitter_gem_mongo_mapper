@@ -36,7 +36,7 @@ function checkTwitterID(input) {
 }
 
 function setButtons() {
-	var a = document.getElementById('user_name').value;
+	var a = document.getElementById('user_twitter_display_name').value;
 	var button = document.getElementById('submit_button');
 
 	if (isValidTwitterID(a)) {  // If Valid TwitterID enable submit button

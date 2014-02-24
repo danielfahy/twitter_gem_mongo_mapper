@@ -1,6 +1,11 @@
 class User
 	include MongoMapper::Document
 	# keys
-	key :name, String, :required => true
-
+	key :twitter_display_name, String, :required => true, :unique => true
+	key :twitteruid, String
+	key :image_url, String
+	key :followers, Integer
+	key :following, Integer
+	key :twitter_created_at, Time
+	key :created_at, Time
 end

@@ -1,14 +1,16 @@
-<h2>All Users</h2>
+<h2>All Twitter Users in DB</h2>
 
+
+ <%if @user.length==0 %><p> No Users Found in Database </p>
+
+ <%else%>
 <ul>
-	<%if @user %>
+
 		<%@user.each do |user|%>
-		<li><%=user.name%> </li>
+		<li><%=user.twitter_display_name%> </li>
 		<%end%>
 </ul>
-	<%else%>
-	<p> No Users Found </p>
-	<%end%>
+<%end%>
 
 
 <%=link_to "Add a new User", new_user_url%>
