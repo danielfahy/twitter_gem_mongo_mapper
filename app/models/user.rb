@@ -5,7 +5,9 @@ class User
 	key :twitteruid, String
 	key :image_url, String
 	key :followers, Integer
+	key :del_followers, Integer
 	key :following, Integer
+	key :del_following, Integer
 	key :twitter_created_at, Time
 	key :created_at, Time
 end

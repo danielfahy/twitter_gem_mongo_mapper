@@ -23,6 +23,8 @@ MongodbTest::Application.routes.draw do
 
   match '/auth/failure' => 'users#authfailure'
 
+  match '/users/show' => 'users#show'
+
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
