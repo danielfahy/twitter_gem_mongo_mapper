@@ -2,6 +2,9 @@
 // This file is automatically included by javascript_include_tag :defaults
 // =require_tree
 // =require javascripts
+//= require jquery
+//= require jquery_ujs
+//= require_tree
 
 
 function isValidTwitterID(string) {
@@ -47,3 +50,7 @@ function setButtons() {
 			button.disabled=true;  
 	}
 } 
+
+function loadLastThreeTweets(TwitterID) {
+	console.log(TwitterID)
+}

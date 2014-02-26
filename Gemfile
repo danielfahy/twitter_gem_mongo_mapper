@@ -11,3 +11,4 @@ gem "dynamic_form"
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'twitter'
+gem 'jquery-rails'
