@@ -1,6 +1,6 @@
-<h2>User : <%= @user.twitter_display_name %>  DB</h2>
+<h2>Twitter user ID : <%= @user.twitter_display_name %></h2>
+<p>ID in Mongo DB : <%= @user.id%> </p>
+<p> Change in followers : <%= @user.del_followers%> </p>
+<p> Change in following : <%= @user.del_following%> </p>
 
-
-
-
-<%=link_to "Add a new User", new_user_url%>
+<%=link_to "Load Different Twitter User", new_user_url%>
